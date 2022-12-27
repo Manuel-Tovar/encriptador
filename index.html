@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Encriptador de Texto </title>
+</head>
+<body>
+    <canvas id=canvas></canvas> <!-- CANVAS PARA ANIMACION DE MATRIX-->
+    <div id="logo"> <!-- LOGO Y TITULO DE LA PAGINA -->
+        <img src="./img/Vector.png" alt="logo">
+        <p>  ENCRIPTADOR </p>
+    </div>
+    <div id="contenedor"> <!-- CONTENEDOR DE LAS DOS VENTANAS-->
+        <section id="#division-uno"> <!-- DIVISION DE LA PRIMERA VENTANA -->
+            <div id="texto-escribir" > 
+                <div class="terminal"> <!-- CABECERA PARA EL TEXT AREA -->
+                    <div class="butt">
+                        <button class="btn btn-color"></button>
+                        <button class="btn"></button>
+                        <button class="btn"></button>
+                    </div>
+                    <p class="user">manuelTovar@admin: ~</p>
+                </div>
+                <textarea name="text" id="ingreso-texto" cols="30" rows="10" placeholder="Ingrese el texto aquí" ></textarea> <!-- TEXT AREA DONDE SE INGRESA EL TEXTO -->
+                <p class="alerta" ><img src="./img/icono-advertencia.png" alt="icon"> Solo letras minúsculas y sin acentos</p>
+                <div id="btn">
+                    <button id="encriptar"><span>Encriptar </span></button>
+                    <button id="desencriptar"><span>Desencriptar</span></button>
+                </div>
+            </div>
+        </section>
+        <section id="division-dos"> <!-- DIVISION DE LA SEGUNDA VENTANA -->
+            <div id="contenedor-texto-imprime">
+                <textarea id="resultado-texto"></textarea>
+                <div id="texto-imprime"> <!-- TEXT AREA DONDE SE IMPRIME EL RESULTADO -->
+                    <img src="./img/alerta.png" alt="busqueda">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <button id="copiar">Copiar</button>
+                <div id="animacion" class="progreso" >
+                    <div id="barra" class="progreso-bar" style="width:0%;">
+                        <span class="progreso-bar-text">0%</span>
+                        <p> Cargando...</p>
+                    </div>
+                </div>
+            </div>
+        </section> 
+    </div>
+   <footer>
+    <p>By Manuel Tovar: </p> <!-- FOOTER PARA LA INFORMACION DEL CREADOR  -->
+    <a href="https://github.com/Manuel-Tovar" target="_blank"> * Github * </a>
+    <a href="https://www.linkedin.com/in/manuel-tovar-x/" target="_blank" > * Linkedin *</a>
+    <a href="https://manuel-tovar.github.io/miportafolioweb/" target="_blank" > * Portafolio *</a>
+   </footer>
+<!--SweetAlert-->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./app.js" ></script>
+</body>
+</html>
