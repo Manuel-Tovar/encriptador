@@ -95,7 +95,7 @@ btnCopiar.addEventListener("click", ()=> {
 
 /* FUNCION PARA QUITAR LAS MAYUSCULAS Y LOS ACENTOS AL TEXT AREA */
 textIngresado.addEventListener("input", () => {
-    textIngresado.value = textIngresado.value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()
+    textIngresado.value = textIngresado.value.normalize("NFD").replace(/[^a-zA-Z 0-9.]+/g,'').toLowerCase()
 });
 
 function showAlert() {
@@ -107,7 +107,6 @@ function showAlert() {
         showConfirmButton: false,
         timer: 1300
       })
-   
 }
 
 // FUNCION PARA ANIMACION DE MATRIX
