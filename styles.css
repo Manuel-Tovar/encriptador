@@ -374,7 +374,7 @@ footer a {
 
 /* MEDIA QUERIES PARA OPTIMIZAR AL CELULAR Y TABLET */
 
-@media (max-width: 700px) {
+@media (max-width: 890px) {
     #contenedor, #btn, #division-uno{
         display: flex;
         flex-direction: column;
