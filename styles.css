@@ -47,6 +47,7 @@ canvas{
     grid-row-gap: 0px;
     justify-items: center;
     align-items: center;
+    height:80vh ;
     
 }
 
